@@ -9,6 +9,6 @@
     <Grid>
 
         <TextBlock Text="Hello World!" VerticalAlignment="Center" HorizontalAlignment="Center" 
-                   FontSize="28"/>
+                   FontSize="32"/>
     </Grid>
 </Window>
