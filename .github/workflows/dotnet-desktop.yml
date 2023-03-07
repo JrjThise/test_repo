@@ -56,11 +56,11 @@ jobs:
         with:
           dotnet-version: 7.0
       - name: Install dependencies
-        run: dotnet restore
+        run: dotnet restore ./test_project
       - name: build
-        run: dotnet build
+        run: dotnet build ./test_project
       - name: Test
-        run: dotnet test
+        run: dotnet test ./test_project
       
                            
 
