@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = test_project
-build_property.ProjectDir = C:\Users\jrj\source\repos\test_repo\test_project\test_project\
+build_property.ProjectDir = C:\capacit-test\test_project\test_project\

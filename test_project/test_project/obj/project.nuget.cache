@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w5Ly5YNXaQKfvzAn+v0ipl/0wOPjuFg8pmCTRytUP+CDgHbw9/z3q75f+uUvTnGmmnfzQHaeIwKOWcvXgBf5Qw==",
+  "dgSpecHash": "6Gg5GQFBHe+m9RlDkw9+0jNKs9i7Je9/F0iDagBIzkdFCI2ry+aXealBv5pjb+QH0qcBx5vfaucxLruyWC6BsA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jrj\\source\\repos\\test_repo\\test_project\\test_project\\test_project.csproj",
+  "projectFilePath": "C:\\capacit-test\\test_project\\test_project\\test_project.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
