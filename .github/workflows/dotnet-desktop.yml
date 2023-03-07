@@ -46,23 +46,21 @@ on:
 
 jobs:
 
-  build:
+  buildAndTest:
     runs-on: windows-latest  # For a list of available runner types, refer to
                              # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
     steps:
       - uses: actions/checkout@v3.3.0
-      - name: Step1
-        run: mkdir testmappe
-      - name: Step2
-        run: echo Hello World
-  
-  test:
-    runs-on: windows-latest  # For a list of available runner types, refer to
-                             # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
-    needs: build
-    steps:
-      - name: test-step
-        run: echo hello from test
+      - name: .Net setup
+        uses: actions/setup-dotnet@v3.0.3
+        with:
+          dotnet-version: 7.0
+      - name: Install dependencies
+        run: dotnet restore
+      - name: build
+        run: dotnet build
+      - name: Test
+        run: dotnet test
       
                            
 
