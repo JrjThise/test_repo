@@ -6,7 +6,7 @@ namespace xUnitTestTestProject
         public void Test1()
         {
             string test = "hej";
-            Assert.Contains("hej", test);
+            Assert.Contains("world", test);
         }
     }
 }
