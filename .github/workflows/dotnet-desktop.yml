@@ -61,7 +61,8 @@ jobs:
       - name: Test
         run: dotnet test ./test_project
       - name: Publish
-        run: dotnet publish --output C:\capacit-test\Publish ./test_project
+        run: dotnet publish -r win-x64 /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true --self-contained true --output C:\capacit-test\Publish
+        
       
                            
 
