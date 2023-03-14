@@ -60,6 +60,8 @@ jobs:
         run: dotnet build ./test_project
       - name: Test
         run: dotnet test ./test_project
+      - name: Publish
+        run: dotnet publish -C Release --output C:\capacit-test\Publish ./test_project
       
                            
 
