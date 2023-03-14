@@ -61,7 +61,7 @@ jobs:
       - name: Test
         run: dotnet test ./test_project
       - name: Publish
-        run: dotnet publish -C Release --output C:\capacit-test\Publish ./test_project
+        run: dotnet publish --output C:\capacit-test\Publish ./test_project
       
                            
 
