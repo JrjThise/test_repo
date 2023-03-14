@@ -1,5 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">  
   <PropertyGroup>  
+    <UseWPF>true</UseWPF>
     <OutputType>Exe</OutputType>  
     <TargetName>trade-plus</TargetName>  
     <TargetFramework>net6.0-windows</TargetFramework>  
