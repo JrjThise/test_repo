@@ -61,7 +61,7 @@ jobs:
       - name: Test
         run: dotnet test ./test_project
       - name: Publish
-        run: dotnet publish -r win-x64 -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true p:UseAppHost=true --self-contained -p:PublishDir="C:\capacit-test\Publish" .//test_project
+        run: dotnet publish -r win-x64 -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true p:UseAppHost=true --self-contained -p:PublishDir="C:\capacit-test\Publish" ./test_project/test_project/test_project.csproj
         
         
       
