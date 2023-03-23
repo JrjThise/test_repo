@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.github",
+    "\\test_project",
+    "\\test_project\\xUnitTestTestProject"
   ],
+  "SelectedNode": "\\test_project\\xUnitTestTestProject\\UnitTest1.cs",
   "PreviewInSolutionExplorer": false
 }
