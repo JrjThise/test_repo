@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <DebugType>embedded</DebugType>
     <UseWPF>true</UseWPF>
+    <StartupObject></StartupObject>
   </PropertyGroup>
 
 </Project>
