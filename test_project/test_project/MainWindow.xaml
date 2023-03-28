@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
 
-        <TextBlock Text="Hello World release " VerticalAlignment="Center" HorizontalAlignment="Center" 
+        <TextBlock Text="Hello World release" VerticalAlignment="Center" HorizontalAlignment="Center" 
                    FontSize="28"/>
     </Grid>
 </Window>
