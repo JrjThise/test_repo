@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "AG4hjjXek10g5jrzZ3KKYAlHhgs0UoDYAZ40nFBBDwgWGRtTSH6r4wnZPlDD9DMuMHuyZN90f+FoMm7vA77UYg==",
+  "dgSpecHash": "PWLcKuhF7+g65wM2aF7RgewQZSf6ZGPgFNPXSLTn3w2g5wCFxawQzRXlUDNuLmqfZS5smdP4Bq6/4IDALhB2SA==",
   "success": true,
   "projectFilePath": "C:\\capacit-test\\test_project\\test_project\\test_project.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\jrj\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.4\\microsoft.aspnetcore.app.runtime.win-x64.7.0.4.nupkg.sha512",
+    "C:\\Users\\jrj\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.4\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.4.nupkg.sha512",
+    "C:\\Users\\jrj\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.4\\microsoft.netcore.app.runtime.win-x64.7.0.4.nupkg.sha512"
+  ],
   "logs": []
 }
