@@ -46,12 +46,9 @@ on:
 
 jobs:
 
-  build:
-
+  ThiseMes-Publish-Action:
     runs-on: self-hosted    # For a list of available runner types, refer to
                              # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
-              
-
     steps:
     - name: Checkout
       uses: actions/checkout@v3
@@ -76,7 +73,8 @@ jobs:
       run: dotnet test ./test_project
       
     - name: Publish
-      run: msbuild /t:publish /p:PublishProfile=ClickOnceProfile.pubxml -p:PublishDir="\\filserver\Programmer\JRJTEST" -p:IncludeNativeLibrariesForSelfExtract=true ./test_project/test_project
+    #-p:PublishDir="\\filserver\Programmer\JRJTEST"
+      run: msbuild /t:publish /p:PublishProfile=ClickOnceProfile.pubxml -p:IncludeNativeLibrariesForSelfExtract=true ./test_project/test_project
    
 
     # Decode the base 64 encoded pfx and save the Signing_Certificate
