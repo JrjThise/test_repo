@@ -73,8 +73,8 @@ jobs:
       run: dotnet test ./test_project
       
     - name: Publish
-    #-p:PublishDir="\\filserver\Programmer\JRJTEST"
-      run: msbuild /t:publish /p:PublishProfile=ClickOnceProfile.pubxml -p:IncludeNativeLibrariesForSelfExtract=true ./test_project/test_project
+      run: msbuild /t:publish /p:PublishProfile=ClickOnceProfile.pubxml /p:PublishDir="\\filserver\programmer\test_repo_Test"
+      #run: msbuild /t:publish /p:PublishProfile=ClickOnceProfile.pubxml -p:PublishDir="\\filserver\Programmer\JRJTEST" -p:IncludeNativeLibrariesForSelfExtract=true ./test_project/test_project
    
 
     # Decode the base 64 encoded pfx and save the Signing_Certificate
