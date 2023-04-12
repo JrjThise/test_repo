@@ -23,6 +23,13 @@ namespace test_project
         public MainWindow()
         {
             InitializeComponent();
+
+            TESTLISTBOX.Items.Add(new ListItem());
+            TESTLISTBOX.Items.Add(new ListItem());
+            TESTLISTBOX.Items.Add(new ListItem());
+            TESTLISTBOX.Items.Add(new ListItem());
+            TESTLISTBOX.Items.Add(new ListItem());
+            TESTLISTBOX.Items.Add(new ListItem());
         }
     }
 }

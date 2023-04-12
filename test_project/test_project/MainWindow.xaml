@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test_project"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"
+        Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
 
         <StackPanel Orientation="Vertical" VerticalAlignment="Center">
             <TextBlock Text="Hello World release 2" VerticalAlignment="Center" HorizontalAlignment="Center" 
@@ -15,6 +21,38 @@
                        VerticalAlignment="Center" HorizontalAlignment="Center" 
                        Margin="0 10 0 0"/>
         </StackPanel>
-        
+
+
+        <ListBox x:Name="TESTLISTBOX" d:ItemsSource="{d:SampleData ItemCount=50}" Grid.Row="1" BorderThickness="0" 
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Width="120" Margin="2 0 2 0" >
+                        <Border CornerRadius="10" ClipToBounds="True" 
+                                BorderBrush="Black" BorderThickness="1" 
+                                Background="#7FFF22DD" Height="60">
+                            
+                            <TextBlock Text="IMG HERE" VerticalAlignment="Center"
+                                        HorizontalAlignment="Center" />
+                        </Border>
+
+                        <TextBlock Text="FirstName" HorizontalAlignment="Center" />
+                        <TextBlock Text="LastName" HorizontalAlignment="Center" />
+                        <TextBlock Text="Title" HorizontalAlignment="Center" />
+                        <TextBlock Text="Eng Title" HorizontalAlignment="Center" />
+                    </StackPanel>
+
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel IsItemsHost="True" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+        </ListBox>
+
+       
     </Grid>
 </Window>
